@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: #141519;
+}
+
+.main-container{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #1f2630;
+    border-radius: 30px;
+}
+
+.item-container{
+    margin: 40px;
+}
+
+svg{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+
+.star-container{
+    width: 50px;
+    height: 50px;
+    background-color: #272e38;
+    border-radius: 50%;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-size: medium;
+    color: #7c8898;
+    line-height: 25px;
+}
+
+.check-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+label{
+    margin: 10px;
+    cursor: pointer;
+    color: #7c8898;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.check-numbers label input[type = "radio"]{
+    display: none;
+}
+
+.check-numbers label {
+    background: #272e38;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.2s;
+    user-select: none;
+}
+
+label .option_inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.option_inner .number{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+label input[type = "radio"]:checked ~ .option_inner{
+    background: #7c8898;
+    color: #ffffff;
+}
+
+.option_inner:hover{
+    background: #fe7515;
+    color: #ffffff;
+}
+
+.submit{
+    box-sizing: border-box;
+    width: 80%;
+    margin-top: 25px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background: #fe7515;
+    color: #ffffff;
+    position: absolute;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.submit:hover{
+    background: #ffffff;
+    color: #fe7515;
+}
